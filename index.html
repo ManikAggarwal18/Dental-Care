@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Registration</title>
+    <script src="./javascript.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="list container">
+        <a href="#" class="logo"><img src="Images/Image1.png" height="100" alt=""></a>
+        <div class="heading">
+        <h2>AGGARWAL'S</h2>
+        <h2>DENTAL</h2>
+        </div>
+        <div class="togglemenu" onclick="togglemenu()"></div>
+        <nav class="navigation list">
+            <ul style="list-style: none;" class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li>
+                    <a href="#" class="page active appointment" onclick="appointment()">Book Appointment</a>
+                    <div class="menu list">
+                        <div class="menu-content list flex container">
+                            <div>
+                                <h4>Book your visit at</h4>
+                                <h4>Aggarwal's Dental Clinic</h4>
+                                
+                                <form action="">
+                                    <div class="form list">
+                                        <div>
+                                            <label for="">Enter Name</label>
+                                            
+                                            <input type="text" name="" id="" pattern="[A-Z]{1}+[a-z]{0,}+[/s]+[A-Z]{1}+[a-z]{0,}" placeholder="Jatin Aggarwal">
+                                        </div>
+                                        <div>
+                                            <label for="">Enter Phone Number</label>
+                                            
+                                            <input type="tel" name="" id="" pattern="[0-9]{10}" placeholder="9814565690">
+                                        </div>
+                                        <div>
+                                            <label for="">Enter Date</label>
+                                            
+                                            <input type="date" name="" id="">
+                                        </div>
+                                        <div>
+                                            <label for="">Select Time</label>
+                                        
+                                            <select name="" id="">
+                                                <option>9:00 am</option>
+                                                <option>10:00 am</option>
+                                                <option>11:00 am</option>
+                                                <option>12:00 pm</option>
+                                                <option>1:00 pm</option>
+                                                <option>2:00 pm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="">Select Service</label>
+                                        <br>
+                                        <select name="" id="">
+                                            <option>Dental Cleaning</option>
+                                            <option>Filling</option>
+                                            <option>Root Canal</option>
+                                            <option>Dental Implant</option>
+                                            <option>Dental Braces</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="Submit page">Make an Appointment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dental list flex container">
+        <div class="dental-content">
+            <h2>Welcome</h2>
+            <h2>Caring for you & your smile.</h2>
+            <p>At Aggarwal's Dental, we are dedicated to providing exceptional dental care tailored to meet the unique needs of each patient. Our team of highly skilled and compassionate dental professionals is committed to creating a warm and welcoming environment where you can feel at ease during your visits.</p>
+            <a href="#" class="page">Make an appointment</a>
+        </div>
+        <div class="image"><img src="Images/Image2.png" height="500" alt=""></div>
+    </section>
+
+    <section class="about list flex container" id="about">
+        <div class="about-img list">
+            <img src="Images/Image5.png"  height="200" alt="">
+            <img src="Images/Image6.png"  height="200" alt="">
+            <img src="Images/Image4.png"  height="300" alt="">
+        </div>
+        <div class="about-content">
+            <h5>About Us</h5>
+            <h2>Our dentists have years of experience and stay up-to-date with the latest advancements in dentistry to deliver top-notch care.</h2>
+            <p>We welcome patients of all ages and strive to make dental care enjoyable for everyone, including children.Your comfort and satisfaction are our top priorities. We listen to your concerns, answer your questions, and involve you in creating personalized treatment plans.</p>
+            <a href="#" class="page">Make an appointment</a>
+        </div>
+    </section>
+
+    <section class="service container" id="service">
+        <div class="service-content list flex">
+            <div>
+                <h2> We utilize cutting-edge dental technology and modern techniques to ensure precise diagnoses and effective treatments.</h2>
+                <p>From routine check-ups and cleanings to advanced cosmetic and restorative treatments, we offer a wide range of dental services to address all your oral health needs.</p>
+            </div>
+            <div class="service-option column">
+                <div class="s-option">
+                    <img src="Images/Image7.jpg" height="100" alt="">
+                    <h3>Dental Cleaning</h3>
+                    <p>Dental Cleaning involves the removal of plaque, tartar (calculus), and stains from the teeth. This procedure helps prevent gum disease and cavities, promoting overall oral health.</p>
+                    <a href="#" class="option-content list">
+                    <img src="Images/Image22.png" height="50" alt="">
+                    </a>
+                </div>
+                <div class="s-option">
+                    <img src="Images/Image8.png" height="100" alt="">
+                    <h3>Filling</h3>
+                    <p>Dental fillings are used to repair teeth that have been damaged due to decay or minor fractures. The decayed or damaged portion of the tooth is removed, and the resulting cavity is filled with materials like composite resin, amalgam, or porcelain.</p>
+                    <a href="#" class="option-content list">
+                    <img src="Images/Image22.png" height="50" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="service-option column">
+            <div class="s-option">
+                <img src="Images/Image9.png" height="100" alt="">
+                <h3>Root Canal</h3>
+                <p>Root canal treatment is performed when the pulp inside a tooth becomes infected or inflamed due to deep decay, repeated dental procedures, or trauma. During the procedure, the infected pulp is removed, and the root canals are thoroughly cleaned, disinfected, and sealed with a filling material. This saves the tooth from extraction and relieves pain.</p>
+                <a href="#" class="option-content list">
+                <img src="Images/Image22.png" height="50" alt="">
+                </a>
+            </div>
+            <div class="s-option">
+                <img src="Images/Image10.png" height="100" alt="">
+                <h3>Dental Implant</h3>
+                <p>Dental implants are a permanent solution for replacing missing teeth. They involve the surgical placement of titanium posts into the jawbone, which act as artificial tooth roots. These implants fuse with the bone over time, providing a stable foundation for attaching crowns, bridges, or dentures on top</p>
+                <a href="#" class="option-content list">
+                <img src="Images/Image22.png" height="50" alt="">
+                </a>
+            </div>
+            <div class="s-option">
+                <img src="Images/Image11.png" height="100" alt="">
+                <h3>Dental Braces</h3>
+                <p>Dental Braces are used to correct misaligned teeth and improper bites. Braces consist of metal brackets attached to the teeth, connected with wires, while aligners are clear, removable trays that gradually shift teeth into proper alignment. Orthodontic treatment enhances dental aesthetics, improves oral health, and aids in better jaw function.</p>
+                <a href="#" class="option-content list">
+                <img src="Images/Image22.png" height="50" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <h2>What Patients say about us?</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide list">
+                     <div class="slide-profile"><img src="Images/Image12.png" height="100" alt=""></div>
+                     <div>
+                        <h3>Manik</h3>
+                        <div class="list">
+                            <img src="Images/Image16.png" height="30" alt="">
+                            <img src="Images/Image16.png" height="30" alt="">
+                            <img src="Images/Image16.png" height="30" alt="">
+                            <img src="Images/Image16.png" height="30" alt="">
+                            <img src="Images/Image16.png" height="30" alt="">
+                        </div>
+                        <p>Friendly staff and all the latest technology at a brand new facility. I could not have had a better first impression.</p>
+                      </div>
+                   </div>
+            
+                   <div class="swiper-slide list">
+                    <div class="slide-profile"><img src="Images/Image13.png" height="100" alt=""></div>
+                    <div>
+                       <h3>Jatin</h3>
+                       <div class="list">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                       </div>
+                       <p>Had a very pleasant experience. They got in in right away. They went above and beyond and asked questions to get me what I needed.</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide list">
+                    <div class="slide-profile"><img src="Images/Image14.png" height="100"  alt=""></div>
+                    <div>
+                       <h3>Raj</h3>
+                       <div class="list">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                       </div>
+                       <p>Wonderful dentist, hygienists and staff! Great facility too! They took the time to explain things to me and answer all my questions.</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide list">
+                    <div class="slide-profile"><img src="Images/Image15.png" height="100" alt=""></div>
+                    <div>
+                       <h3>Joy</h3>
+                       <div class="list">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                           <img src="Images/Image16.png" height="30" alt="">
+                       </div>
+                       <p>Amazing dentist, very caring and the staff is great.Excellent staff, service, and ease of scheduling. I recommend anyone to go there.</p>
+                     </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-details">
+        <div  class="contact list container">
+            <div class="contact-content">
+                <h2>We are ready to serve your various dental problems.</h2>
+                <div class="contact-page list">
+                    <a href="tel:9779907858">Call 9779907858</a>
+                    <span>or</span>
+                    <a href="#" >Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer list container">
+            <div>
+                <a href="#" class="logo"><img src="Images/Image1.png" height="100" alt=""></a>
+                <p>Consultation service with the best dental doctor of all time</p>
+                <div class="media-links list">
+                    <a href="#" class="logo"><img src="Images/Image17.png" height="50" alt=""></a>
+                    <a href="#" class="logo"><img src="Images/Image18.png" height="50" alt=""></a>
+                    <a href="#" class="logo"><img src="Images/Image19.png" height="80" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <h5>Contact Us</h5>
+                <ul style="list-style: none;">
+                    <li>Aggarwaldental@gmail.com</li>
+                    <li>1234567890</li>
+                    <li>#1852 Sector-15 Panchkula </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy-right">&copy; 2023. All right reserved Manik Aggarwal</p>
+    </footer>
+</body>
+</html>
